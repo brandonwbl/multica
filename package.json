@@ -70,13 +70,14 @@
     "collectCoverageFrom": [
       "src/**/*.ts",
       "!src/**/*.d.ts"
-    ]
+    ],
+    "verbose": true
   },
   "prettier": {
     "semi": true,
     "singleQuote": true,
     "trailingComma": "all",
-    "printWidth": 120,
+    "printWidth": 100,
     "tabWidth": 2
   }
 }
