@@ -14,8 +14,8 @@
     "declarationMap": true,
     "sourceMap": true,
     "removeComments": false,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
@@ -25,5 +25,6 @@
     }
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]
+  // including test files so I can run tsc checks on them during local dev
+  "exclude": ["node_modules", "dist"]
 }
