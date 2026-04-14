@@ -27,5 +27,5 @@
   "include": ["src/**/*"],
   // including test files so I can run tsc checks on them during local dev
   // note: enabled noUnusedLocals + noUnusedParameters for stricter checks while learning the codebase
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist", "**/*.spec.ts", "**/*.test.ts"]
 }
