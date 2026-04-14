@@ -14,8 +14,8 @@
     "declarationMap": true,
     "sourceMap": true,
     "removeComments": false,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
@@ -26,5 +26,6 @@
   },
   "include": ["src/**/*"],
   // including test files so I can run tsc checks on them during local dev
+  // note: enabled noUnusedLocals + noUnusedParameters for stricter checks while learning the codebase
   "exclude": ["node_modules", "dist"]
 }
